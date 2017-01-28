@@ -8,12 +8,13 @@
   5. When containers have started run `docker-compose exec --user docker workspace bash`
   6. Install all dependencies - `composer install && npm install`
   7. Copy .env.example to env then add the db credentials
-    ```
+  
+  ```
     DB_CONNECTION=pgsql
     DB_HOST=10.0.75.2
     DB_PORT=5432
     DB_DATABASE=nextup
     DB_USERNAME=homestead
     DB_PASSWORD=secret
-    ```
+   ```
   8. Finally run `php aritsan key:generate && php artisan migrate`
